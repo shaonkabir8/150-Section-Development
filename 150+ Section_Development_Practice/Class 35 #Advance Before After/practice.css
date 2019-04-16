@@ -1,0 +1,166 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color:#B8BFC1;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus, button:focus{
+    outline: 0 solid;
+}
+
+.section-padding{
+    padding:80px 0;
+}
+
+
+
+.section-absolute-bg{
+    background-image: url(assets/images/boxed-img.jpg);
+}
+
+.section-absolute-bg-two{
+    background-image: url(assets/images/second-section-img.jpg);
+}
+
+
+
+.section-padding {
+  background: #212830;
+  color: #fff;
+  position: relative;
+}
+.section-absolute-bg {
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.section-absolute-bg.section-absolute-bg-two {
+  right: auto;
+  left: 0;
+}
+.boxed-content {
+  position: relative;
+  padding-left: 42px;
+  padding-right: 49px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.boxed-content::before {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 1px;
+  height: 100px;
+  content: '';
+  background: #ddd;
+}
+
+.boxed-content::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #212830;
+	border-bottom: 10px solid transparent;
+	right: -35px;
+	top: 0;
+}
+
+.section-absolute-bg-right .boxed-content::after {
+	transform: rotate(-180deg);
+	border-left: 20px solid #212830;
+	right: auto;
+	left: -87px;
+	top: 0;
+}
+
+
+
+.section-absolute-bg-right .boxed-content {
+  padding-right: 0;
+  margin-left: 54px;
+}
+
+.boxed-content h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.bordered-btn {
+  border: 1px solid #ddd;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 28px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 24px;
+}
+.section-absolute-bg::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

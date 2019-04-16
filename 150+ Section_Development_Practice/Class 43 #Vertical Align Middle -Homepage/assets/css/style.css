@@ -1,0 +1,207 @@
+/* Base CSS */
+
+/*
+    Scripting Language = Mr De Haviland as welcome text
+    & Roboto is used here in body as main Fonts ||
+*/
+@import url('https://fonts.googleapis.com/css?family=Mr+De+Haviland|Roboto:300,400,500,700');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+a{color: #fff}
+a:hover {
+    text-decoration: none;
+}
+
+/*Main CSS Of Class:   */
+body,html , .full-width-area{
+    height:100%;
+    width:100%;
+}
+
+.full-width-area{
+    background-image: url(../images/section-bg-one.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    min-height:100%;
+}
+
+
+.full-width-area::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: black;
+    opacity: .7;
+    z-index: -1;
+}
+.logo-text a {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 27px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 7px;
+    padding: 7px 0px;
+}
+.logo-text a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #fff;
+    opacity: .6;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-menu ul li {
+    display: inline-block;
+    padding-left: 19px;
+}
+.main-menu ul li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 0;
+}
+.main-menu a.active {
+    position: relative;
+    z-index: 1;
+}
+.main-menu a.active::after {
+    position: absolute;
+    left: 0;
+    bottom: 9px;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background: #fff;
+    opacity: .6;
+}
+
+
+
+.header-area {
+    padding: 20px 0;
+}
+
+.hero-area-table {
+    display: table;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+.hero-area-tablecell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.main-content h3 {
+    font-family: 'Mr De Haviland', cursive;
+    font-size: 85px;
+    color: #aaa485;
+    margin: 0;
+}
+.main-content h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-bottom: 0;
+}
+.main-content h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+.section-border {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.left-border {
+    height: 2px;
+    width: 86px;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+.right-border {
+    width: 86px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+}
+
+.icon {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: -10px 20px;
+}
+.icon::after {
+    position: absolute;
+    content: "\f2dc";
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 100%;
+    top: -24px;
+    left: 0;
+    background: red;
+    color: #fff;
+    font-size: 16px;
+    margin-left: -15px;
+}
+.scroll-to-about {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    text-align: center;
+    opacity: .4;
+    z-index: 1;
+    line-height: 40px;
+}
+
+
+
+
+

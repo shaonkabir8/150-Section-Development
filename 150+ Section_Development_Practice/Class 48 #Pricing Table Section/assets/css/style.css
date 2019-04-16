@@ -1,0 +1,160 @@
+/* Base CSS */
+
+/*
+    Body = Roboto .
+    Heading=  Raleway.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+
+.pricing-heading {
+    padding: 49px;
+}
+.single-pricing-box {
+    width: 33.333333%;
+    float: left;
+}
+.pricing-heading {
+    background: #fafbfa;
+    position: relative;
+    z-index: 1;
+}
+body {
+    color: #b1b1b1;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.pricing-heading h4 {
+    color: #a2a2a2;
+    font-weight: 300;
+    font-size: 23px;
+}
+.pricing-heading h3 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 28px;
+}
+.pricing-content {
+    padding: 72px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.pricing-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 25px;
+}
+.pricing-bordered-btn {
+    border: 1px solid;
+    color: #fa153c;
+    display: inline-block;
+    padding: 5px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    margin: 18px 0;
+}
+.single-pricing-box {
+    margin-top: 35px;
+    box-shadow: 0 0 10px #ececec;
+}
+.pricing-table .single-pricing-box.active .pricing-heading::after {
+    position: absolute;
+    right: -49px;
+    top: 27px;
+    content: 'Featured';
+    background: #fff;
+    color: red;
+    font-size: 21px;
+    font-weight: 700;
+    transform: rotate(46deg);
+    width: 44%;
+}
+.pricing-table .single-pricing-box.active .pricing-heading {
+    background: red;
+    color: #fff;
+}
+.pricing-table .single-pricing-box.active .pricing-heading h4 {
+    color: #fff;
+}
+.pricing-table .single-pricing-box.active .pricing-heading h3 {
+    color: #fff;
+}
+.single-pricing-box.active {
+    margin-top: 0;
+}
+.pricing-table .single-pricing-box.active .pricing-content {
+    padding: 82px 0;
+}
+.pricing-table .single-pricing-box.active .pricing-bordered-btn {
+    background: red;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

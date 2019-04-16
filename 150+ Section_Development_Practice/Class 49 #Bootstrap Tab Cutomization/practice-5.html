@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login Interface |Tab Cutomization | Class No:49 </title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="practice-5.css">
+    </head>
+    <body>
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navigation-tab">
+                            <div class="tab-menu">
+                                <ul>
+                                    <li class="active"><a data-toggle="tab" href="#login"><i class="fas fa-lock"></i> Login Panel</a></li>
+                                    <li><a data-toggle="tab" href="#registation"><i class="fas fa-user"></i> Register Panel</a></li>
+                                    <li><a data-toggle="tab" href="#password-forgot"><i class="fas fa-key"></i> Forgot Password</a></li>
+                                    <li><a data-toggle="tab" href="#contact"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                                </ul>
+                            </div>
+                            <!--Content of Navigation Tab-->
+                            <div class="tab-content">
+                                <!--Log in Area-->
+                                <div class="log-in-area active tab-pane" id="login">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <div class="login-form">
+                                                <h3 class="heading"><i class="fas fa-user"></i> Login Here</h3>
+                                                <form action="#">
+                                                    <label for="name">Username</label>
+                                                    <input type="text" class="form-control">
+                                                    <label for="password">Password</label>
+                                                    <div class="row">
+                                                        <div class="col-md-6 offset-md-6 text-right">
+                                                            <a href="#"><i class="fas fa-question"></i>Forgot Password ?</a>
+                                                        </div>
+                                                    </div>
+                                                    <input type="password" class="form-control">
+                                                    <input type="checkbox"> Remember Me
+                                                    <input type="submit" value="Login">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="social-links">
+                                                <h3 class="heading"><i class="fas fa-calendar-plus"></i>Social</h3>
+                                                <ul>
+                                                    <li><a href="#"><img src="assets/images/fb.png" alt=""></a></li>
+                                                    <li><a href="#"><img src="assets/images/twitter.png" alt=""></a></li>
+                                                    <li><a href="#"><img src="assets/images/google.png" alt=""></a></li>
+                                                    <li><a href="#"><img src="assets/images/linkedin.png" alt=""></a></li>
+                                                    <li><a href="#"><img src="assets/images/pinterest.png" alt=""></a></li>
+                                                    <li><a href="#"><img src="assets/images/youtube.png" alt=""></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Regitation Area-->
+                                <div class="user-registation-form tab-pane" id="registation">
+                                    <h3>Be a part of us !!</h3>
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="name">First Name</label>
+                                                <input class="form-control" type="text" placeholder="Your First Name">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="name">Last Name</label>
+                                                <input class="form-control" type="text" placeholder="Your Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="name">Choose Your Country</label>
+                                                <input class="form-control" type="text" placeholder="Your Country">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="name">Choose Your City</label>
+                                                <input class="form-control" type="text" placeholder="Your City">
+                                            </div>
+                                        </div>
+                                        <label for="email">Enter Your Email</label>
+                                        <input class="form-control" type="email" placeholder="Enter Your Email ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="number">Enter Your Postal Code</label>
+                                                <input class="form-control" type="text" placeholder="Your Postal Code/Zip Code">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="tel">Enter Your Mobile Number</label>
+                                                <input class="form-control" type="text" placeholder="Your Phone Number">
+                                            </div>
+                                            <label for="password">Enter Password</label>
+                                            <input class="form-control" type="password" placeholder="Enter Password">
+                                            <label for="password">Re-enter Password</label>
+                                            <input class="form-control" type="password" placeholder="Re-enter Password">
+                                            <input type="checkbox"> I agree to the Terms &amp;Conditions.
+                                            <input type="submit" value="Sign Up">
+                                        </div>
+                                    </form>
+                                    <div class="alert alert-success">
+                                        Already Registered ? <a href="#" class="login">Click here</a> to <strong>Log in</strong>
+                                    </div>
+                                </div>
+                                <!--Forgot Password Area-->
+                                <div class="password-forgot-area tab-pane" id="password-forgot">
+                                    <form action="#">
+                                        <div class="alert alert-danger">
+                                            <strong>Forgot</strong> Your Password ??
+                                        </div>
+                                        <label for="text">Try to Remember Your Last Password you enter</label>
+                                        <input class="form-control" type="password" placeholder="Enter Your Password">
+                                        <div class="alert alert-info">
+                                            <strong>Couldn't Remember ?</strong> No Problem.
+                                        </div>
+                                        <label for="text">Ener Your Email To Get Verification Code</label>
+                                        <input class="form-control" type="email" placeholder="Enter Your Email">
+                                        <input type="submit" value="Request a New Password">
+                                    </form>
+                                </div>
+                                <!--Contact Area-->
+                                <div class="contact tab-pane" id="contact">
+                                    <div class="contact-form">
+                                        <h3>Drop Us a Line</h3>
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input class="form-control" type="text" placeholder="Enter Your Name">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input class="form-control" type="tel" placeholder="Enter Your Mobile Number">
+                                                </div>
+                                            </div>
+                                            <input class="form-control" type="email" placeholder="Enter Your Email">
+                                            <p><textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Write Your Message Here"></textarea></p>
+                                            <input type="submit" value="Send Your Message">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Scripts-->
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/all.min.js"></script>
+
+        <script>
+            
+            $(document).ready(function() {
+                // Changing the active Class
+                $(".tab-menu ul li").on('click', function() {
+                    $(".tab-menu ul li.active").removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+/* Base CSS */
+
+/*
+    Body = Roboto .
+    Heading=  Raleway.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#fff;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+.section-bg{
+    background-image: url(../images/section-bg-two.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    position: relative;
+    z-index: 1;
+}
+.section-bg::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: -1;
+    opacity: .9;
+}
+body {
+    font-size: 18px;
+    line-height: 26px;
+    color: #999;
+}
+.fearute-text h3 {
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+}
+.fearute-text h3::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background: #e5615b;
+}
+.bordered-btn {
+    border: 1px solid #f5676d;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 17px;
+    display: inline-block;
+    padding: 15px 30px;
+    width: 220px;
+    margin-top: 42px;
+}
+.bordered-btn svg {
+    float: right;
+    font-size: 21px;
+    padding-top: 1px;
+}
+.absolute-content {
+    background: #e44431;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 140px;
+    top: 0;
+    width: 250px;
+    height: 300px;
+    padding-top: 53px;
+    text-transform: uppercase;
+}
+.right-side-carousel-content img {
+    position: relative;
+    padding-top: 140px;
+}
+
+.absolute-content p.price-amount {
+    font-size: 39px;
+    opacity: 1;
+    padding: 1px 0;
+}
+.shopping-cart {
+    color: #333;
+    background: #fff;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    line-height: 50px;
+    text-align: center;
+    left: -25px;
+    top: 50px;
+    z-index: 10;
+    box-shadow: 0 0 18px #666;
+}
+.right-side-carousel-content {
+    position: relative;
+}
+.absolute-content p {
+    font-size: 22px;
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+

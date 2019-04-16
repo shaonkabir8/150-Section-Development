@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Practice |Tab Cutomization | Class No:49 </title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        
+        <!--Inline Css-->
+        <style>
+
+            .tab-item {
+                background: #34495e;
+                color: #758594;
+                margin-bottom: 50px;
+            }
+            .tab-item ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .tab-item li {
+                display: inline-block;
+                padding: 30px 0;
+                cursor: pointer;
+                position: relative;
+                width: 230px;
+            }
+            .tab-item li::before {
+                position: absolute;
+                right: 0;
+                top: 20%;
+                width: 2px;
+                height: 60%;
+                content: '';
+                background: #ddd;
+                opacity: 0.3;
+            }
+            .tab-item ul li a {
+                display: block;
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #758594;
+                padding-bottom: 15px;
+            }
+            .section-padding {
+                padding: 100px 0;
+            }
+            .tab-item ul li svg {
+                display: inline-block;
+                font-size: 32px;
+                text-align: center;
+                line-height: 60px;
+                width: 60px;
+                height: 60px;
+            }
+            .tab-content {
+                padding: 33px;
+            }
+            .tab-item ul li.active {
+                background: #85d6de;
+                color: #fff;
+                position:relative;
+                z-index:1;
+            }
+            .tab-item ul li.active::after {
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                width: 20px;
+                height: 20px;
+                background: #85d6de;
+                content: '';
+                transform: rotate(45deg);
+                margin-top: ;
+                z-index: -1;
+                opacity: .7;
+            }
+            .tab-item ul li.active a {
+                color: #fff;
+            }
+        </style>
+        
+    </head>
+    <body>
+         <div class="section-padding">
+             <div class="container-fluid">
+                 <div class="row">
+                     <div class="col-md-12">
+                         <div class="stylish-tab">
+                             <div class="tab-item text-center">
+                                 <ul>
+                                     <li class="active"> <i class="fas fa-home"></i><a  data-toggle="tab" href="#home">Home</a></li>
+                                     <li><i class="fas fa-user"></i><a  data-toggle="tab" href="#profile">Profile</a></li>
+                                     <li><i class="fas fa-copy"></i><a  data-toggle="tab" href="#attachment">Attachment</a></li>
+                                     <li><i class="fas fa-briefcase "></i><a  data-toggle="tab" href="#projects">Projects</a></li>
+                                     <li><i class="fas fa-cogs "></i><a  data-toggle="tab" href="#settings">settings</a></li>
+                                 </ul>
+                             </div>
+                             <div class="tab-content">
+                                 <div  id="home" class="tab-pane active">
+                                     <h3>Home Content</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eaque sit ratione repellendus cumque ullam laborum tempora, est deleniti. Debitis.</p>
+                                 </div>
+                                 <div id="profile" class="tab-pane ">
+                                     <h3>Profile Content</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis quo repellendus fugiat temporibus provident aut saepe dolorem impedit error.</p>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis quo repellendus fugiat temporibus provident aut saepe dolorem impedit error.</p>
+                                 </div>
+                                 <div  id="attachment" class="tab-pane ">
+                                     <h3>Atachment Content</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos corporis nihil ab iusto similique dolore reprehenderit possimus rerum. Vel, consequuntur?</p>
+                                 </div>
+                                 <div id="projects" class="tab-pane ">
+                                     <h3>Projects Content</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident necessitatibus, labore corporis. Eius modi odit, distinctio quidem, quasi aut rem.</p>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident necessitatibus, labore corporis. Eius modi odit, distinctio quidem, quasi aut rem.</p>
+                                 </div>
+                                 <div id="settings" class="tab-pane ">
+                                     <h3>Settings Content</h3>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores incidunt molestias expedita magnam quod odit, reprehenderit laudantium sunt ducimus eius.</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/all.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                
+                // Changing the active Class
+                $(".tab-item li").on('click', function() {
+                    $(".tab-item li.active").removeClass('active');
+                    $(this).addClass('active');
+                });
+            });
+        </script>
+
+    </body>
+</html>

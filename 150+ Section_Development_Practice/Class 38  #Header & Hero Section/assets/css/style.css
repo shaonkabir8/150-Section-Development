@@ -1,0 +1,153 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+/* For Deactiving Focus */
+
+
+/*Main CSS Of Class:   */
+
+
+
+.single-slide-item{
+    background-image: url(../images/hero-bg-4.jpg);
+}
+
+
+
+.logo img {
+  max-width: 110px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+.logo {
+  position: relative;
+  z-index: 1;
+  padding-left: 122px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.logo a {
+	font-size: 20px;
+	color: #333;
+	font-weight: 700;
+}
+.logo a span {
+  font-size: 15px;
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+}
+.contact-info {
+  font-size: 21px;
+}
+.contact-info a{
+    color:#333;
+}
+.right-info {
+  display: inline-block;
+  text-align: left;
+  padding-top: 3px;
+  position: relative;
+  z-index: 1;
+  padding-left: 38px;
+  margin-left: 88px;
+}
+.right-info svg {
+  position: absolute;
+  left: 0;
+  top: 19px;
+  font-size: 28px;
+}
+.header-area {
+  padding: 15px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.single-slide-item {
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+.slide-text {
+	position: relative;
+	z-index: 10;
+	padding-left: 75px;
+	padding-top: 43px;
+	padding-bottom: 46px;
+	padding-right: 131px;
+	font-size: 23px;
+	line-height: 41px;
+}
+.slide-text h2 {
+	font-size: 47px;
+	font-weight: 900;
+	line-height: 64px;
+}
+.slide-text::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: .7;
+  z-index: -10;
+}
+.boxed-btn {
+	background: #F17900;
+	color: #fff;
+	font-weight: 700;
+	padding: 15px 40px;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

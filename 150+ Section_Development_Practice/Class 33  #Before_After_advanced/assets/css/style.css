@@ -1,0 +1,151 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff ;
+}
+img {
+    max-width: 100%;
+    min-height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#fff ;
+}
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus, button:focus{
+    outline: 0 solid;
+}
+a:hover{text-decoration: none}
+.section-padding{
+    padding:100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+
+.fullwidth-area-bg{
+    background-image:url(../images/banner-2.jpg);
+}
+
+
+
+.fullwidth-area-bg {
+  margin: 70px 0;
+}
+.margin-minus {
+  margin-top: -70px;
+  margin-bottom: -70px;
+  padding: 70px;
+}
+.dark-bg {
+	background: #2C2F41;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1.9;
+}
+
+.boxed-content {
+	position: relative;
+	padding-top: 21px;
+	padding-left: 18px;
+}
+.boxed-content::before {
+  position: absolute;
+  content: '';
+  left: -25px;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.boxed-content::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	right: -43px;
+	width: 44px;
+	height: 44px;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.boxed-content h2 {
+  font-size: 50px;
+}
+.boxed-content h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.boxed-content h4 span {
+  font-weight: normal;
+  font-size: 66%;
+  opacity: .3;
+  display: inline-block;
+  margin-left: 7px;
+  font-style: italic;
+}
+.author {
+	position: relative;
+	padding-left: 37px;
+	margin-bottom: 50px;
+}
+.author:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  width: 27px;
+  height: 2px;
+  background: #fff;
+  margin-top: -2px;
+}
+.bordered-btn {
+  border: 2px solid #B5A68E;
+  color: #fff;
+  padding: 10px 42px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

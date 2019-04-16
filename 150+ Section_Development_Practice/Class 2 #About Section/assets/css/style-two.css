@@ -1,0 +1,128 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+overflow: hidden;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+.pd50{padding:50px}
+
+
+/* # All Creadit goes to RRF and My Respected Mentor Rasel Vai .
+    Main CSS Files
+
+    CLASS NO:2 
+    
+ */
+
+.section-bg{
+    background-image: url(../images/class-two_image-one.jpg);
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 56%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.section-bg-two{
+    background-image: url(../images/class-two_image-two.jpg);
+    left: -57px;
+}
+
+.section-padding {
+  position: relative;
+  color: #fff;
+  border-bottom: 10px solid #C0C748;
+}
+
+.box-btn {
+  background: #BFC84F;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 6px 13px;
+  border-radius: 3px;
+  margin-bottom: 62px;
+}
+.seconde-section{
+    border: none;
+}
+
+
+
+.section-details h3 {
+  font-size: 25px;
+  color:#fff;
+}
+
+.section-details {
+    position: relative;
+    z-index: 2;
+    padding-left: 56px;
+    padding-top: 40px;
+  
+}
+.section-details::before {
+    content: '';
+    position: absolute;
+    background-color: #072351;
+    left: -4891%;
+    top: 0;
+    width: 5000%;
+    height: 100%;
+    color: #fff;
+    opacity: 1;
+    transform: skew(19deg);
+    z-index: -1;
+
+}
+.section-details-two {
+    position: relative;
+    z-index: 2;
+    padding-right: : 56px;
+    padding-top: 40px;
+}
+.section-details-two::before {
+    content: '';
+    position: absolute;
+    background-color: #00CCCD;
+    top: 0;
+    width: 5000%;
+    height: 100%;
+    color: #fff;
+    opacity: 1;
+    transform: skew(19deg);
+    z-index: -1;
+    left: -11%;
+
+}

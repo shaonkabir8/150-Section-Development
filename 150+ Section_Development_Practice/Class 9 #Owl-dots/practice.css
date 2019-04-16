@@ -1,0 +1,120 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #908b8b;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+
+/*    For fontAwesome
+
+    font-family: 'Font Awesome 5 Free';
+	content: "\f10e";
+	font-weight: 900;
+	color: #6AAF08;
+    
+*/
+
+.section-padding {
+  padding: 100px 0;
+}
+
+
+
+.section-title h2 {
+  color: #222225;
+  font-size: 35px;
+}
+.testimonial {
+  margin-top: 50px;
+}
+.section-borders span {
+  width: 40px;
+  height: 5px;
+  background-color: #6AAF08;
+  display: inline-block;
+  border-radius: 2px;
+}
+.section-borders span.black-border {
+  background-color: #333;
+  width: 23px;
+  margin: 0 6px;
+}
+.single-testimonial-item {
+	box-shadow: 0 0 2px #D6D6D6;
+	margin: 5px;
+	padding: 10px;
+	position: relative;
+	padding-left: 80px;
+}
+.single-testimonial-item::before {
+	font-family: 'Font Awesome 5 Free';
+	content: "\f10e";
+	font-weight: 900;
+	color: #6AAF08;
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	line-height: 30px;
+	font-size: 24px;
+	margin-top: -15px;
+}
+.single-testimonial-item::after {
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 60%;
+	background: #D6D6D6;
+	top: 16px;
+	left: 62px;
+}
+.single-testimonial-item h3 {
+  font-size: 20px;
+  color: #222;
+}
+.single-testimonial-item h3 span {
+  display: block;
+  color: #BCB8B8;
+  font-size: 15px;
+  margin-bottom: ;
+}
+
+
+
+/*Owl-dots*/
+.testimonial.owl-carousel .owl-dots {
+	text-align: center;
+	margin-top: 30px;
+}
+.testimonial.owl-carousel .owl-dots button {
+	width: 20px;
+	height: 5px;
+	display: inline-block;
+	background-color: #6aaf08;
+	border-radius: 2px;
+	margin: 4px;
+}
+
+.testimonial.owl-carousel .owl-dots .active {
+	width: 33px;
+	background: #0A0101;
+	transition: .3s;
+}
+

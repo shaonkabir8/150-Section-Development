@@ -1,0 +1,154 @@
+/* Base CSS */
+
+/*
+Body = Roboto .
+Heading=  Raleway.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title{
+    margin-bottom: 70px;
+}
+/*Main CSS Of Class:   */
+
+.single-boxed-item {
+    background-image: url(assets/images/01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-color: #333;
+    position:relative;
+    z-index: 1;
+}
+.single-box-item-bg-2{
+    background-image: url(assets/images/3.jpg)
+}
+.single-box-item-bg-5{
+    background-image: url(assets/images/04.jpg)
+}
+.single-box-item-bg-4{
+    
+    background-image: url(assets/images/12.jpg)
+}
+.single-box-item-bg-3{
+    background-image: url(assets/images/9.jpg)
+}
+
+.single-boxed-item.half-height{
+    height: 300px;
+}
+
+
+/*Row Customization*/
+.row.customize{
+    margin: 0;
+}
+
+.row.customize .col-md-4{
+    padding:0;
+}
+
+.hover-content {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 86%;
+    height: 90%;
+    left: 7%;
+    top: 5%;
+    font-size: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.hover-content::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: #000;
+    z-index: -1;
+    opacity: .8;
+}
+.box-item-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.box-item-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.link {
+    color: green;
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 20px;
+}
+.hover-content h3 {
+    font-size: 22px;
+    margin: 5px;
+}
+.hover-content p {
+    color: #b1b1b1;
+    font-style: italic;
+    font-weight: 300;
+}
+.single-boxed-item:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}

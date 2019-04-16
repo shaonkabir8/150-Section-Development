@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+/*Main CSS Of Class:   */
+
+.service-item {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+.single-service-item {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10%;
+    font-size: 13px;
+    line-height: 2;
+    transition: all .2s linear;
+    display: block;
+    color: #333;
+}
+.single-service-item:hover {
+    box-shadow: 0 25px 40px #999;
+    text-decoration: none;
+}
+.service-item .col-md-4 {
+  padding: 0;
+}
+.service-item .row {
+  margin: 0;
+}
+.single-service-item h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+}
+.service-icon {
+  display: inline-block;
+  font-size: 28px;
+  color: #ddd;
+  transition: all .2s linear;
+}
+.single-service-item:hover  .service-icon{
+    color:red;
+}
+
+
+
+
+
+
+
+
+

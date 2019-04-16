@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+.header-menu {
+    background: black;
+    color: #fff;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-menu ul li {
+    display: inline-block;
+    position:relative;
+    z-index: 1;
+}
+.main-menu ul li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 23px;
+    transition: .3s;
+}
+
+.main-menu ul li a svg {
+    margin-right: ;
+    margin-left: 17px;
+    font-size: 22px;
+}
+.main-menu ul li:hover > a {
+    background: red;
+}
+
+/*First Level dropdown*/
+
+.main-menu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 57px;
+    background: black;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: .3s;
+}
+.main-menu ul li ul li {
+    border-bottom: 1px solid #fff;
+    display: block;
+}
+.main-menu ul li ul li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.main-menu ul li ul li a svg {
+    float: right;
+    font-size: 25px;
+}
+
+.main-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+.main-menu ul ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+/*Second Level dropdown*/
+.main-menu ul ul li{
+    position: relative;
+}
+.main-menu ul ul li ul {
+    left: 300px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}

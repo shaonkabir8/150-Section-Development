@@ -1,0 +1,84 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    color:#a9a9a9;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+/* Full Width Image Section | Class 5 */
+
+
+.section-bg{
+    position: relative;
+}
+.section-bg::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 49%;
+  height: 100%;
+  background-image: url(../images/image-one.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.customize-text h3 {
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #333;
+}
+.customize-text span {
+  color: #15B7FE;
+}
+.customize-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.9;
+}
+.accordian-section .card-header {
+  padding: 0;
+  margin-bottom: 11px;
+  border: none;
+}
+
+.accordian-section .accordion .card-header h5 a {
+  display: block;
+  text-align: left;
+  padding: 13px;
+  color: #666;
+}
+
+.svg-inline--fa.fa-angle-up.fa-w-10 , .svg-inline--fa.fa-angle-down.fa-w-10 {
+  float: right;
+  text-align: center;
+  font-size: 38px;
+  line-height: 1.8;
+  color: #32D2FE;
+}

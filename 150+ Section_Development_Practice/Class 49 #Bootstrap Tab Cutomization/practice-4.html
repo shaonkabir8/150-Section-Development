@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Practice |Tab Cutomization | Class No:49 </title>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        
+        <!--Internal StyleSheet-->
+        <style>
+            a,a:hover{text-decoration:none; transition:.3s}
+            .section-padding{
+                padding:100px 0;
+            }
+            .header-tab{background-color:black;}
+            .header-tab ul{margin:0;padding:0;list-style:none; border-bottom:4px solid red;}
+            .header-tab ul li{display:inline-block; padding:15px 65px;}
+            .header-tab ul li a{display:block; color:#fff; padding:0 55px;}
+            .header-tab ul li.active {
+                background: red;
+                color: #fff;
+                position:relative;
+                z-index:1;
+            }
+            .header-tab ul li.active::after {
+                position: absolute;
+                content: '';
+                width: 15px;
+                height: 0px;
+                border-left: 14px solid transparent;
+                border-right: 14px solid transparent;
+                border-top: 22px solid #f00;
+                z-index: -1;
+                left: 50%;
+                bottom: -29px;
+                margin-left: -7.5px;
+            }
+            
+            
+            .tab-content {
+                padding: 50px;
+                border-bottom:4px solid red;
+            }
+        </style>
+        
+    </head>
+    <body>
+       
+        <div class="section-padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="Navigation-tab">
+                            <div class="header-tab">
+                                <ul>
+                                    <li><a data-toggle="tab" href="#home">Home</a></li>
+                                    <li class="active"><a data-toggle="tab" href="#profile">Profile</a></li>
+                                    <li><a data-toggle="tab" href="#contact">Contact</a></li>
+                                    <li><a data-toggle="tab" href="#about">About</a></li>
+                                </ul>
+                              </div>
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade">
+                                        <h3>Home Content</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus a consectetur ad nobis eligendi quibusdam illo, porro autem ipsum illum eum, reprehenderit soluta dolores est quos quam quasi dolor. Expedita.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus a consectetur ad nobis eligendi quibusdam illo, porro autem ipsum illum eum, reprehenderit soluta dolores est quos quam quasi dolor. Expedita.</p>
+                                    </div>
+                                    <div id="profile" class="tab-pane active ">
+                                        <h3>Profile Content</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero et, minus nisi, autem rem tenetur totam nesciunt animi earum, dolore similique! Sapiente est cupiditate reprehenderit nobis cumque eos inventore?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero et, minus nisi, autem rem tenetur totam nesciunt animi earum, dolore similique! Sapiente est cupiditate reprehenderit nobis cumque eos inventore?</p>
+                                    </div>
+                                    <div id="contact" class="tab-pane fade">
+                                        <h3>Contact Content</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, atque officiis est tempore ratione laborum. Molestias unde dolor sint, iste enim? Doloremque, ad alias non. Quae vero, sunt voluptatem!</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor, atque officiis est tempore ratione laborum. Molestias unde dolor sint, iste enim? Doloremque, ad alias non. Quae vero, sunt voluptatem!</p>
+                                    </div>
+                                    <div id="about" class="tab-pane fade">
+                                        <h3>About Content</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima earum eligendi impedit vel nihil repellat ex, consectetur, reiciendis eius, fugiat tenetur quisquam mollitia quos ipsa eum nulla accusantium eos adipisci.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima earum eligendi impedit vel nihil repellat ex, consectetur, reiciendis eius, fugiat tenetur quisquam mollitia quos ipsa eum nulla accusantium eos adipisci.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/all.min.js"></script>
+
+        <script>
+            //Active Class Changing Script for Navigation Tab
+            $(document).ready(function() {
+                $(".header-tab ul li").on('click', function() {
+                    $(".header-tab ul li.active").removeClass('active');
+                    $(this).addClass('active');
+                    
+                    
+                });
+                
+                
+                
+                
+            });
+        </script>
+
+    </body>
+</html>

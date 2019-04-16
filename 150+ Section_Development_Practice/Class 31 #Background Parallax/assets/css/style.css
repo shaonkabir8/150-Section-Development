@@ -1,0 +1,173 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+.section-bg {
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+}
+
+.section-bg-2 {
+    background-image: url(../images/3.jpg);
+}
+
+.section-bg-3 {
+    background-image: url(../images/2.jpg)
+}
+
+html,
+body,
+.full-height {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: black;
+    z-index: -1;
+    opacity: .6;
+}
+
+.single-section-item {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    text-align: center;
+}
+
+.single-section-item::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    content: '';
+    z-index: -1;
+    opacity: .6;
+}
+
+.single-section-item h3 {
+    font: 25px;
+}
+
+.section-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.section-tablecell {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.section-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.bordered-btn {
+    border: 1px solid #6eb121;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: inline-block;
+    margin: 14px 0;
+    transition: .3s;
+}
+
+.bordered-btn:hover {
+    background: #6eb121;
+}
+
+body {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.video-btn {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background: #6eb121;
+    line-height: 100px;
+    font-size: 31px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.video-play {
+    font-size: 23px;
+}

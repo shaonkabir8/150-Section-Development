@@ -1,0 +1,119 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus, button:focus{
+    outline: 0 solid;
+}
+
+.section-padding{
+    padding:100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+
+.team-bg {background-image: url(../images/team-1.jpg);}
+.team-bg-2 {background-image: url(../images/team-2.jpg);}
+.team-bg-3 {background-image: url(../images/team-8_Sharukh_khan-1.jpg);}
+
+
+
+
+
+
+.section-title h3 {
+	position: relative;
+	z-index: 1;
+	transform: rotate(270deg);
+	text-transform: uppercase;
+	font-size: 39px;
+	margin-top: 40px;
+	letter-spacing: 2px;
+	width: 300px;
+	margin-left: -97px;
+}
+.section-title h3::before {
+  position: absolute;
+  left: 0;
+  top: -36px;
+  content: '';
+  width: 100px;
+  height: 2px;
+  background: black;
+}
+
+
+.team-bg {
+  height: 270px;
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 50px;
+  background-color: #ddd;
+}
+
+
+.team-content{
+    border: 1px solid #333;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.team-content h3 {
+	display: inline-block;
+	font-size: 23px;
+	background: #fff;
+	padding: 0 15px;
+	margin-bottom: 10px;
+}
+
+.team-content h3 span {
+	display: block;
+	margin-top: 5px;
+	font-size: 80%;
+	color: #636363;
+	margin-bottom: 16px;
+}
+.author {
+	margin-top: -17px;
+}
+
+.col-md-4:nth-child(2) .single-team-member {
+	margin-top: 100px;
+}
+
+
+

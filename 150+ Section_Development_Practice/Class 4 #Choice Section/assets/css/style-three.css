@@ -1,0 +1,103 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+overflow: hidden;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+
+
+/* # All Creadit goes to RRF and My Respected Mentor Rasel Vai .
+    Main CSS Files
+
+    CLASS NO:3 
+    
+ */
+
+
+.video-area {
+    position: relative;
+    padding: 80px 0;
+    margin: 102px 0;
+}
+.video-section-bg {
+    background-image: url(../images/class-three_image-one.png);
+    background-position: center;
+    background-color: #ddd;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0 0 20px #888;
+}
+.check-icon li:before{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f00c";
+   font-weight: 900;
+
+}
+
+.video-play-btn {
+  position: absolute;
+  right: -36px;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #60c025;
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: -50px;
+  padding-right: ;
+  margin-left: ;
+  display: inline-block;
+  padding-left: ;
+  margin-left: ;
+  padding-left: 6px;
+  line-height: 70px;
+}
+.check-icon li {
+  position: relative;
+  padding-left: 33px;
+  color: #666;
+  padding-bottom: 12px;
+}
+.check-icon li:before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  color: #60C025;
+}
+.video-text-area h3 {
+  color: #333;
+  font-size: 25px;
+}

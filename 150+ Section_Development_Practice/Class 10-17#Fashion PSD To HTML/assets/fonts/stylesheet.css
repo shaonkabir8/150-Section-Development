@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-Regular.eot');
+    src: url('Karla-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Karla-Regular.woff2') format('woff2'),
+        url('Karla-Regular.woff') format('woff'),
+        url('Karla-Regular.ttf') format('truetype'),
+        url('Karla-Regular.svg#Karla-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('Karla-Bold.eot');
+    src: url('Karla-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Karla-Bold.woff2') format('woff2'),
+        url('Karla-Bold.woff') format('woff'),
+        url('Karla-Bold.ttf') format('truetype'),
+        url('Karla-Bold.svg#Karla-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Code';
+    src: url('Code-Bold.eot');
+    src: url('Code-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Code-Bold.woff2') format('woff2'),
+        url('Code-Bold.woff') format('woff'),
+        url('Code-Bold.ttf') format('truetype'),
+        url('Code-Bold.svg#Code-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Code';
+    src: url('Code-Light.eot');
+    src: url('Code-Light.eot?#iefix') format('embedded-opentype'),
+        url('Code-Light.woff2') format('woff2'),
+        url('Code-Light.woff') format('woff'),
+        url('Code-Light.ttf') format('truetype'),
+        url('Code-Light.svg#Code-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+

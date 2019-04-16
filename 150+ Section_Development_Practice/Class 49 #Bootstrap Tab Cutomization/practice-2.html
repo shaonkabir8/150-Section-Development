@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice |Tab Cutomization | Class No:49 </title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="practice-2.css">
+</head>
+<body>
+    
+    
+    <div class="section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="nav-tab-bar">
+                        <ul class="tab-item">
+                            <li><i class="fas fa-home"></i><a data-toggle="tab" href="#id1">Home</a></li>
+                            <li class="active"><i class="fas fa-user"></i><a data-toggle="tab" href="#id2">profile</a></li>
+                            <li><i class="fas fa-copy"></i><a data-toggle="tab" href="#id3">Attachment</a></li>
+                            <li><i class="fas fa-briefcase"></i><a data-toggle="tab" href="#id4">Project</a></li>
+                            <li><i class="fas fa-cogs"></i><a data-toggle="tab" href="#id5">Settings</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="id1" class="tab-pane ">
+                                <h3>Home Content</h3>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptates, aut iste nulla consequatur architecto obcaecati molestias nemo reprehenderit facilis ut natus repellat dolore dicta fugit tempora. Doloremque, saepe, expedita? </p>
+                            </div>
+                            <div id="id2" class="tab-pane active in ">
+                                <h3>Profile Content</h3>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore eaque neque iusto corporis, mollitia! Impedit laudantium iure aliquid! Et obcaecati praesentium, minus laborum reprehenderit placeat neque officiis maiores eveniet? </p>
+                            </div>
+                            <div id="id3" class="tab-pane fade">
+                                <h3>Attachment Content</h3>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio reiciendis aliquid mollitia fugit quam, maxime, laborum voluptate, ipsa sequi rem tempore. Excepturi, eos nisi. Voluptas rem iste sapiente, labore harum. </p>
+                            </div>
+                            <div id="id4" class="tab-pane fade">
+                                <h3>Projects Content</h3>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolor asperiores nam! Autem illum cumque cum quaerat nihil ea nesciunt iure, maiores rem! Dolore voluptatum aut illo ullam natus quibusdam? </p>
+                            </div>
+                            <div id="id5" class="tab-pane fade">
+                                <h3>Setting Content</h3>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quos enim, doloribus aspernatur? Molestiae suscipit at minima ullam fugiat, nam provident accusantium porro quibusdam. Placeat ullam, veniam sint ipsam aperiam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $(".tab-item li").on('click', function(){
+                $(".tab-item li.active").removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>

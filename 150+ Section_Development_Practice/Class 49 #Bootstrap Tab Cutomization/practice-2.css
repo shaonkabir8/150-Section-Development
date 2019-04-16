@@ -1,0 +1,114 @@
+/* Base CSS */
+
+/*
+Body = Roboto .
+Heading=  Raleway.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500,700');
+
+* {
+margin: 0;
+padding: 0;
+outline: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+    color:#818e9c;
+    font-weight: 300;
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Raleway', sans-serif;
+margin: 0 0 15px;
+font-weight: 700;
+color:#333;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+outline: 0 solid;
+}
+
+a,
+a:hover {
+text-decoration: none;
+}
+
+.section-padding {
+padding: 100px 0;
+}
+
+.tab-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #f3f7f7;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    border-top: none;
+}
+.tab-item li {
+    display: inline-block;
+    text-align: center;
+    width: 234px;
+    cursor: pointer;
+}
+.tab-item li a {
+    display: block;
+    padding: 0 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #333;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+.tab-item li.active , .tab-item li.active a {
+    color: #85d6de;
+    background: #fff;
+}
+.tab-item li.active {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 4px solid #85d6de;
+}
+.tab-item li:nth-child(5).active {
+    border-left: 1px solid #ddd;
+    border-right:none;
+    border-top: 4px solid #85d6de;
+}
+.tab-item li svg {
+    width: ;
+    font-size: 30px;
+    display: inline-block;
+    margin-top: 23px;
+}
+
+
+
+.nav-tab-bar .tab-content {
+    padding: 23px;
+    padding-left: 35px;
+}

@@ -1,0 +1,133 @@
+/* Base CSS */
+
+/*
+    Body = Roboto .
+    Heading=  Raleway.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+.testimonial-carousel .owl-carousel .owl-item img {
+    max-width: 100px;
+}
+.testimonial-carousel.owl-carousel .owl-item img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 147px;
+    margin-bottom: 47px;
+}
+.testimonial-carousel.owl-carousel .owl-dots button {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #565555;
+    display: inline-block;
+    margin: 6px;
+    border-radius: 50%;
+}
+.testimonial-carousel.owl-carousel .owl-dots {
+    text-align: center;
+}
+.testimonial-carousel.owl-carousel .owl-dots button.active {
+    background: #474545;
+}
+.testimonial-content {
+    font-size: 21px;
+    line-height: 36px;
+    text-align: center;
+}
+.testimonial-content h2 {
+    font-size: 30px;
+    color: #666;
+    font-weight: 400;
+}
+.testimonial-content h2 span {
+    display: block;
+    font-size: 70%;
+    margin-top: 6px;
+}
+.testimonial-carousel {
+    position: relative;
+    z-index: 1;
+}
+.testimonial-carousel::before {
+    position: absolute;
+    left: -40px;
+    top: 181px;
+    content: "\f10d";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 32px;
+}
+.testimonial-carousel::after {
+    position: absolute;
+    right: 40px;
+    bottom: 120px;
+    content: "\f10e";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

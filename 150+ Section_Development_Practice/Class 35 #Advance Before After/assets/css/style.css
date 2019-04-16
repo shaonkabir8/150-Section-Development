@@ -1,0 +1,115 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color:#B8BFC1;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus, button:focus{
+    outline: 0 solid;
+}
+
+.section-padding{
+    padding:100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+
+.section-bg{
+    background-image: url(../images/section-bg-1.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+.section-bg-two{
+    background-image: url(../images/section-bg-2.png);
+}
+
+
+
+
+.fullwidth-area {
+  background: #212830;
+  color: #B8BFC1;
+  position: relative;
+}
+.section-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.section-bg-two {
+  right: auto;
+  left: 0;
+}
+.boxed-content {
+	position: relative;
+	padding: 45px;
+	font-size: 17px;
+	line-height: 1.5;
+	padding-right: 0;
+	padding-left: 75px;
+}
+.boxed-content h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #fff;
+}
+.boxed-content::before {
+  position: absolute;
+  left: 30px;
+  width: 1px;
+  height: 120px;
+  background: #B8BFC1;
+  content: '';
+}
+.bordered-btn {
+	color: #fff;
+	border: 1px solid #B8BFC1;
+	padding: 10px 25px;
+	display: inline-block;
+	margin-top: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+
+
+
+

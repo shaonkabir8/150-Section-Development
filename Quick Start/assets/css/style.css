@@ -1,0 +1,33 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#343434;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #888888;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+.section-padding{
+    padding:100px 0;
+}
+.section-title {
+  margin-bottom: 70px;
+}
+
+
+/*Main CSS Of Class:   */

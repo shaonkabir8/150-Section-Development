@@ -1,0 +1,90 @@
+/* Base CSS */
+
+body {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #333;
+}
+a:hover { text-decoration: none }
+
+.section-padding {
+  padding: 100px 0;
+}
+.section-title h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 13px;
+}
+.section-title h3::before {
+	position: absolute;
+	content: '';
+	width: 47px;
+	height: 4px;
+	left: 0;
+	bottom: 0;
+	background: #0FAEF0;
+	border-radius: 5px;
+}
+
+.staff-list{
+    padding-top: 25px;
+}
+.staff-list .single-staff-item img {
+  width: 160px;
+  max-width: 160px;
+  border-radius: 50%;
+  height: 178px;
+}
+.staff-meta h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-bottom: 0px;
+}
+.staff-meta p {
+  font-size: 14px;
+  text-align: ;
+  color: #010100;
+}
+
+
+/*Owl Nav */
+.staff-list.owl-carousel .owl-nav button {
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	background: #ddd;
+	color: #fff;
+	font-size: 28px;
+	line-height: 41px;
+	margin-left: 4px;
+    transition:.3s;
+}
+.staff-list.owl-carousel .owl-nav button:hover {
+  background: #0faef0;
+  transition: .3s;
+}
+.staff-list.owl-carousel .owl-nav {
+  position: absolute;
+  top: -50px;
+  right: 6px;
+}
+

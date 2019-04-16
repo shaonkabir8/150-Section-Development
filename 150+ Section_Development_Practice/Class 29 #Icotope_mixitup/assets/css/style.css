@@ -1,0 +1,135 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+a:hover{text-decoration: none;}
+.section-padding{
+    padding:100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+
+.single-project-item {
+    background-image: url(../images/1.png);
+    background-size: cover;
+    background-position: center top;
+    background-color: #ddd;
+}
+.project-bg-2 {background-image: url(../images/2.png);}
+.project-bg-3 {background-image: url(../images/3.png)}
+.project-bg-4 {background-image: url(../images/5.png)}
+.project-bg-5 {background-image: url(../images/5.png)}
+.project-bg-6 {background-image: url(../images/6.png)}
+.project-bg-7 {background-image: url(../images/7.png)}
+.project-bg-8 {background-image: url(../images/8.png)}
+.project-bg-9 {background-image: url(../images/9.png)}
+
+
+
+
+
+.project li {
+    display: inline-block;
+    padding-right: 28px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.single-project-item {
+    height: 200px;
+    margin-bottom: 15px;
+}
+.row.project-list .col-md-4:nth-child(2) .single-project-item,
+.row.project-list .col-md-4:nth-child(4) .single-project-item,
+.row.project-list .col-md-4:nth-child(5) .single-project-item
+{
+    height: 400px;
+}
+.row.project-list .col-md-4 {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+.row.project-list {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.project-hover {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.project-hover::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    content: '';
+    z-index: -1;
+    opacity: .7;
+}
+.project-hover span {
+    display: block;
+    color: #05f605;
+    font-weight: 300;
+    font-size: 78%;
+    margin: 0;
+}
+.project-hover h4 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    line-height: 32px;
+}
+.link {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 25px;
+    color: #05f60b;
+}
+.single-project-item:hover .project-hover {
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+
+
+
+
+

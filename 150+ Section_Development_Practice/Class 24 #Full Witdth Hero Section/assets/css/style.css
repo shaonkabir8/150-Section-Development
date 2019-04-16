@@ -1,0 +1,113 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#343434;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #888888;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+.section-padding{
+    padding:100px 0;
+}
+.section-title {
+  margin-bottom: 70px;
+}
+
+
+/*Main CSS Of Class:   */
+
+.menu ul {
+  margin-top: 24px;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+	display: block;
+	color: #fff;
+	font-weight: 400;
+	padding-left: 40px;
+	padding-right: 0;
+	font-size: 20px;
+    z-index: 9;
+}
+
+.menu ul li.active a {
+  color: #ca9a26;
+  position: relative;
+}
+.menu ul li.active a::before {
+  position: absolute;
+  content: '';
+  left: 14px;
+  top: 7px;
+  background: #ca9a26;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: block;
+}
+.logo img {
+  max-height: 69px;
+  width: 100%;
+}
+
+.single-slide-item {
+	background: #263238;
+	color: #fff;
+	font-size: 17px;
+	line-height: 28px;
+	min-height: 500px;
+}
+.slider-text h2 {
+	color: #CA9A26;
+	font-size: 37px;
+	font-weight: 300;
+	line-height: 57px;
+}
+.slider-text {
+	padding-bottom: 126px;
+	padding-top: 180px;
+}
+.border-btn {
+  color: #CA9A26;
+  border: 1px solid #fff;
+  padding: 10px 21px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 17px;
+}
+.slider-bg img {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	max-height: 530px;
+}
+.single-slide-item .row {
+	position: relative;
+}
+.top-header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 10px;
+    z-index: 9;
+}

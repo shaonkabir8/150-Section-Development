@@ -1,0 +1,114 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 900;
+    color:#000;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+.section-padding{
+    padding:100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+
+
+/*Background*/
+.service-bg {
+	width: 100%;
+	height: 250px;
+	display: block;
+	background-image: url(../images/food-item-1.jpg);
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+}
+.service-bg-2 {
+	background-image: url(../images/food-item-2.jpg);
+}
+
+.service-bg-3{
+    background-image: url(../images/food-item-3.jpg);
+}
+
+
+.service-content {
+  position: absolute;
+  text-align: center;
+  color: #f7ffff;
+  font-size: 21px;
+  left: 19%;
+  top: 27%;
+  transition: .3s;
+}
+.service-content h2 {
+  font-weight: 900;
+  font-size: 37px;
+  color: #1a15ff;
+  text-align: center;
+  margin-bottom: -3px;
+}
+.single-service-item:hover .service-content {
+  opacity: 1;
+  display: block;
+  margin-top: 79px;
+  transition: .3s;
+  color:blue;
+}
+.single-service-item:hover .service-content h2 {
+  color:#fff;
+  transition: .3s;
+}
+
+.single-service-item{
+  transition:.3s;
+}
+.single-service-item:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #a7a2a2;
+  transition:.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

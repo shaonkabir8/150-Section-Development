@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+         url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+         url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Light.eot');
+    src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Ubuntu-Light.woff2') format('woff2'),
+         url('../fonts/Ubuntu-Light.woff') format('woff'),
+         url('../fonts/Ubuntu-Light.ttf') format('truetype'),
+         url('../fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+a:focus { outline: 0 solid }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 30px;
+    color:#626262;
+}
+h2{
+    font-size: 30px;
+}
+body {
+    font-family: 'Playfair', sans-serif;
+    font-size: 14px;
+    color:#626262;
+}
+
+.categories{
+    color:#b4ad9e;
+    font-family: 'Ubuntu' , sans-serif;
+    margin:30px 0;
+    text-transform:uppercase;
+}
+
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+/* Hero Section */
+
+.header-top-area {
+  padding: 60px 0;
+}
+.mainmenu li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+.mainmenu li a {
+  color: #626262;
+  padding: 32px;
+}
+
+
+/* Background Images of all Blog Section */
+
+.blog-bg-1{background-image: url(../img/post-img-1.jpg);}
+.blog-bg-2{background-image: url(../img/post-img-2.jpg);}
+.blog-bg-3{background-image: url(../img/post-img-3.jpg);}
+.blog-bg-4{background-image: url(../img/post-img-4.jpg);}
+.blog-bg-5{background-image: url(../img/life-style-post-img-1.jpg);}
+.blog-bg-6{background-image: url(../img/life-style-post-img-2.jpg);}
+
+
+/* Blog Section  */
+.section-padding{
+    padding:80px 0;
+    width:900px;
+    margin:0 auto;
+}
+.blog-bg {
+  position: relative;
+  width: 420px;
+  height: 280px;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+}
+.newsletter-section {
+  background: #f0f0f0;
+  padding: 53px;
+}
+.newsletter-section h2 {
+  color: #333333;
+  margin-bottom: 80px;
+}
+.newsletter-content input {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid;
+  padding: 9px;
+  background: transparent;
+  position: relative;
+  z-index: 2;
+}
+.newsletter-content a {
+    position: absolute;
+    right: 28%;
+    bottom: 8%;
+}
+
+
+/* Footer Area */
+
+.footer-area {
+  background: #f0f0f0;
+  padding: 60px;
+}
+.footer-menu li {
+  display: inline-block;
+}
+.footer-menu li a {
+  color: #000;
+  font-size: ;
+  padding: 10px;
+}
+.social-links a {
+  display: inline-block;
+  color: #626262;
+  padding-right: 0;
+  padding-left: 14px;
+  font-size: 15px;
+}
+.centered-bordered-btn {
+  border: 1px solid;
+  display: inline-block;
+  padding: 4px 15px;
+  color: #626262;
+  margin-top: 68px;
+}

@@ -1,0 +1,88 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Raleway', sans-serif; 
+    color:#B4B4B4;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+.section-padding{padding:100px 0;}
+.section-title {
+	margin-bottom: 70px;
+}
+.section-title h3{color:#333;}
+.single-team-item img {
+	width: 100%;
+	max-height: 255px;
+	border: 2px solid #E7E8E9;
+}
+
+.single-team-item h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 22px;
+  color:#333;
+}
+.single-team-item h4 span {
+  display: block;
+  font-size: 18px;
+  color: #5BA939;
+  font-weight: 300;
+  margin-top: 3px;
+}
+.social-icon {
+	text-align: center;
+	margin-left: 26px;
+	margin-right: 26px;
+	margin-top: -20px;
+	position: relative;
+	z-index: 1;
+}
+.social-icon ul {
+	background: #5BA939;
+	padding: 6px 0;
+}
+.social-icon ul li{display: inline-block;}
+.social-icon ul li a {
+	color: #fff;
+	border: 1px solid;
+	height: 30px;
+	width: 30px;
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

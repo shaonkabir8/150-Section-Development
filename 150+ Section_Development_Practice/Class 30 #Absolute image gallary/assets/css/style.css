@@ -1,0 +1,91 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#303030;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #EFEFF2;
+    color: #7E7E7E;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+.section-padding{
+    padding:100px 0;
+}
+
+
+
+/*Main CSS Of Class:   */
+
+
+
+
+
+.text-section {
+  font-size: 18px;
+  line-height: 29px;
+  padding: 0 30px;
+}
+.text-section h1 {
+	font-size: 40px;
+	line-height: 57px;
+	margin-bottom: 40px;
+	font-weight: 300;
+}
+.boxed-btn {
+	background: #454BED;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 9px 47px;
+	display: inline-block;
+	margin-top: 30px;
+	border-radius: 50px;
+	font-size: 14px;
+	text-align: center;
+}
+.shadow-gallary img {
+	position: relative;
+	z-index: 1;
+	max-width: 50%;
+	max-height: 441px;
+}
+.shadow-gallary img:nth-child(1) {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 60%;
+  box-shadow: 0 0 9px #282828;
+}
+.shadow-gallary img:nth-child(2) {
+	position: absolute;
+	right: 18%;
+	bottom: 0;
+	z-index: 2;
+	top: 92px;
+	width: 60%;
+    box-shadow: 0 0 9px #282828;
+}
+.shadow-gallary img:nth-child(3) {
+	position: absolute;
+	right: auto;
+	left: -23px;
+	bottom: -124px;
+	z-index: 3;
+	min-width: 68%;
+	box-shadow: 0 0 20px #1e1e1e;
+}

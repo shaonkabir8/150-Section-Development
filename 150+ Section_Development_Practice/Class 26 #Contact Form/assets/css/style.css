@@ -1,0 +1,159 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#717171;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus, button:focus{
+    outline: 0 solid;
+}
+
+
+/*Main CSS Of Class:   */
+
+
+.section-padding {
+  padding: 100px 0;
+}
+
+
+input , textarea{
+    width:100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    background-color: #F9F9F9;
+}
+.contact-form input[type=submit],
+.contact-form button{
+    width:auto;
+    margin:0;
+    padding:15px 30px;
+    color:#fff;
+    background-color: #4DAEFE;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+	height: 163px;
+	resize: none;
+}
+
+
+.white-box{
+    box-shadow: 0 0 10px #ddd;
+    padding:30px;
+}
+
+.contact-info {
+	background: #4DAEFE;
+	color: #fff;
+	padding: 29px;
+    min-height: 100%;
+}
+.contact-info a {
+	color: #fff;
+	line-height: 35px;
+	font-size: 18px;
+}
+
+.contact-info-list{
+    position: relative;
+    padding-left: 60px;
+}
+.contact-info-list ul li svg {
+	position: absolute;
+	left: 0;
+	font-size: 23px;
+	display: block;
+	margin-top: 12px;
+}
+
+
+.contact-social-icon li{
+    display: inline-block;
+}
+
+.contact-social-icon li a{
+    display: block;
+    height: 40px;
+    width:40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    margin-top: 26px;
+    margin-right: 10px;
+    background:#fff;
+    color:#333;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ddd;
+    margin-top: 54px;
+    transition:.3s;
+}
+
+.contact-social-icon li a:hover{
+    color: #4DAEFE;
+    box-shadow: 0 0 0;
+    transition:.3s;
+}
+
+
+.contact-form h4 {
+  font-size: 23px;
+  margin-bottom: 50px;
+}
+.contact-info h4 {
+  font-size: 23px;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.contact-info{
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

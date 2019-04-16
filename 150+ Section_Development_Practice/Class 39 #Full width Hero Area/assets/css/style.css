@@ -1,0 +1,188 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+.gradient-overlay-wrapper::after {
+    background: #4c24c1;
+    background: -moz-linear-gradient(-45deg, #4c24c1 24%, #cc98bd 96%);
+    background: -webkit-linear-gradient(-45deg, #4c24c1 24%,#cc98bd 96%);
+    background: linear-gradient(135deg, #4c24c1 24%,#cc98bd 96%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c24c1', endColorstr='#cc98bd',GradientType=1 );
+}
+
+.gradient-overlay-wrapper{
+    background-image: url(../images/section-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.gradient-overlay-wrapper::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    opacity: ;
+    opacity: 0.9;
+}
+.logo {
+    padding-left: 20px;
+}
+.logo img {
+    max-width: 132px;
+    max-height: 130px;
+    text-align: ;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-menu ul li {
+    display: inline-block;
+}
+.main-menu ul li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 18px;
+    opacity: .5;
+    transition:.3s;
+}
+.main-menu ul li:hover a{
+    opacity: 1;
+}
+.header-area {
+    padding: 20px 0;
+    position:relative;
+    z-index: 1;
+}
+.header-area::after{
+    position:absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: 1px;
+    background:#fff;
+    opacity: .1;
+    content:'';
+}
+
+.slide-text {
+    max-width: 365px;
+}
+.slide-text h1 {
+    font-size: 43px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 58px;
+    margin-bottom: 30px;
+}
+.slide-text p{opacity: .7}
+.slider-btn {
+    margin-top: 40px;
+}
+.slider-btn .border-btn {
+    border: 1px solid #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 23px;
+    display: inline-block;
+    border-radius: 50px;
+    transition:.3s;
+}
+.slider-btn .underline-btn {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-left: 26px;
+    padding-bottom: 3px;
+}
+.slider-btn .underline-btn::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    background: #fff;
+    width: 100%;
+    height: 1px;
+}
+
+.slider-btn .border-btn:hover{
+    background: rgb(64,29,224);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(64,29,224,1) 9%, rgba(206,167,203,1) 100%, rgba(84,85,191,1) 100%, rgba(84,85,191,1) 100%, rgba(84,85,191,1) 100%, rgba(206,167,203,1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(64,29,224,1) 9%,rgba(206,167,203,1) 100%,rgba(84,85,191,1) 100%,rgba(84,85,191,1) 100%,rgba(84,85,191,1) 100%,rgba(206,167,203,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(64,29,224,1) 9%,rgba(206,167,203,1) 100%,rgba(84,85,191,1) 100%,rgba(84,85,191,1) 100%,rgba(84,85,191,1) 100%,rgba(206,167,203,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#401de0', endColorstr='#cea7cb',GradientType=1 );
+}
+.absolute-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-height: 660px;
+}
+.slide-text {
+    min-height: 712px;
+    padding-top: 207px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 32px;
+    padding-bottom: 120px;
+}

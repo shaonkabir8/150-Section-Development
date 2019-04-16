@@ -1,0 +1,221 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+/*Main CSS Of Class:   */
+
+.gradient-overlay-wrap::after {
+    background: #4c24c1;
+    background: -moz-linear-gradient(-45deg, #4c24c1 24%, #cc98bd 96%);
+    background: -webkit-linear-gradient(-45deg, #4c24c1 24%,#cc98bd 96%);
+    background: linear-gradient(135deg, #4c24c1 24%,#cc98bd 96%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c24c1', endColorstr='#cc98bd',GradientType=1 );
+}
+
+.gradient-overlay-wrap{
+    background-image: url(assets/images/section-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+.gradient-overlay-wrap::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: .9;
+}
+/*If needs Vertical align Middle*/
+.logo {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.logo-cell {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+
+.logo img {
+    max-width: 165px;
+    max-height: 81px;
+    margin-right: 10px;
+}
+.logo a {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+}
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-menu ul li {
+    display: inline-block;
+}
+.main-menu ul li a {
+    display: block;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    opacity: .6;
+    padding: 23px;
+    transition: .3s;
+}
+.header-area {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 21px;
+}
+.header-area::after {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    content: '';
+    background: #fff;
+    opacity: .1;
+}
+body {
+    color: #fff;
+}
+.main-menu ul li:hover a {
+    opacity: 1;
+}
+.three-dot {
+    margin-top: 27px;
+    display:block;
+}
+.three-dot span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin-top: 7px;
+    border-radius: 10px;
+}
+
+.three-dot span.small-dot {
+    width: 48px;
+    margin-left: -8px;
+}
+
+
+
+.hero-text {
+    max-width: 400px;
+    padding-top: 188px;
+    padding-bottom: 90px;
+    min-height: 800px;
+}
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 58px;
+    margin-bottom: 40px;
+}
+.hero-text p {
+    opacity: .6;
+    font-size: 18px;
+    line-height: 28px;
+}
+.hero-btn a {
+    display: inline-block;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+}
+.hero-btn .bordered-btn {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 11px 21px;
+}
+.hero-btn .underline-btn {
+    color: #fff;
+    padding: 2px 0px;
+    position: relative;
+    z-index: 1;
+    margin-left: 35px;
+}
+.hero-btn .underline-btn::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: .3;
+}
+.absolute-img{
+    position:absolute;
+    right:-15px;
+    bottom: 0;
+    width:100%;
+}
+.absolute-img img {
+    max-height: 700px;
+}
+.hero-area {
+}

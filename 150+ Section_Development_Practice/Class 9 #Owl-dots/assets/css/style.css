@@ -1,0 +1,121 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+a:hover { text-decoration: none }
+ul,ol{margin:0;padding:0;list-style-type: none;}
+
+
+/*
+
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+
+*/
+
+
+
+.section-padding {
+  padding: 100px 0;
+}
+.section-borders span {
+  width: 46px;
+  height: 5px;
+  display: inline-block;
+  background: #6AAF08;
+  border-radius: 2px;
+}
+.section-borders span.black-border {
+  background: black !important;
+  margin: 0 4px;
+  width: 30px;
+}
+.section-title h3 {
+  font-size: 38px;
+  color: #222225;
+}
+.section-borders {
+  padding-bottom: 60px;
+}
+
+/*Owl Dots*/
+.clients-testimonials-section.owl-carousel .owl-dots button {
+  height: 5px;
+  width: 20px;
+  background-color: #6aaf08;
+  display: inline-block;
+  border-radius: 2px;
+  margin: 3px;
+}
+.clients-testimonials-section.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 16px;
+}
+.clients-testimonials-section.owl-carousel .owl-dots .active {
+  width: 30px;
+  background-color: black;
+  transition: .2s;
+}
+
+/*Section Description*/
+.single-testimonial-item {
+  box-shadow: 0 0 2px #DBE0D4;
+  margin: 5px;
+  padding: 12px;
+  font-style: italic;
+  position: relative;
+  padding-left: 80px;
+}
+.single-testimonial-item::before {
+	font-family: 'Font Awesome 5 Free';
+	content: "\f10e";
+	font-weight: 900;
+	color: #6AAF08;
+	font-size: 23px;
+	left: 20px;
+	top: 50%;
+	position: absolute;
+	line-height: 30px;
+	margin-top: -15px;
+}
+
+.single-testimonial-item::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 75%;
+  left: 62px;
+  top: 15px;
+  background: #DAD8D8;
+}
+.single-testimonial-item h3 {
+  font-size: 19px;
+  color: #252525;
+  font-style: normal;
+  font-weight: 700;
+}
+.single-testimonial-item h3 span {
+  display: block;
+  font-size: 13px;
+  color: #9c9595;
+  font-style: italic;
+}
+body {
+  color: #9c9595;
+}

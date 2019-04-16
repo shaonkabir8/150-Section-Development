@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900|Roboto:300,400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+/* For Deactiving Focus */
+a:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=date]:focus,
+input[type=submit]:focus,
+input[type=url]:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+
+.section-title h3{
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*First Dropdown*/
+.header-area , .menu li ul {
+    background: rgb(122,120,119);
+    background: -moz-linear-gradient(top, rgba(122,120,119,1) 0%, rgba(114,114,114,1) 15%, rgba(34,34,34,1) 95%, rgba(34,34,34,1) 100%, rgba(41,137,216,1) 100%, rgba(34,34,34,1) 100%, rgba(34,34,34,1) 101%);
+    background: -webkit-linear-gradient(top, rgba(122,120,119,1) 0%,rgba(114,114,114,1) 15%,rgba(34,34,34,1) 95%,rgba(34,34,34,1) 100%,rgba(41,137,216,1) 100%,rgba(34,34,34,1) 100%,rgba(34,34,34,1) 101%);
+    background: linear-gradient(to bottom, rgba(122,120,119,1) 0%,rgba(114,114,114,1) 15%,rgba(34,34,34,1) 95%,rgba(34,34,34,1) 100%,rgba(41,137,216,1) 100%,rgba(34,34,34,1) 100%,rgba(34,34,34,1) 101%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a7877', endColorstr='#222222',GradientType=0 );
+    color: #fff;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li {
+    display: inline-block;
+    border-right: 1px solid #060606;
+    position:relative;
+}
+.menu li a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 20px;
+    trasition:.3s;
+}
+.menu li:nth-child(1) {
+    border-left: 1px solid #060606;
+}
+
+.menu li:hover > a {
+    background: rgb(34,34,34);
+    background: -moz-linear-gradient(top, rgba(34,34,34,1) -1%, rgba(34,34,34,1) 0%, rgba(41,137,216,1) 0%, rgba(34,34,34,1) 0%, rgba(34,34,34,1) 5%, rgba(114,114,114,1) 85%, rgba(122,120,119,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(34,34,34,1) -1%,rgba(34,34,34,1) 0%,rgba(41,137,216,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 5%,rgba(114,114,114,1) 85%,rgba(122,120,119,1) 100%);
+    background: linear-gradient(to bottom, rgba(34,34,34,1) -1%,rgba(34,34,34,1) 0%,rgba(41,137,216,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 5%,rgba(114,114,114,1) 85%,rgba(122,120,119,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#7a7877',GradientType=0 );
+    
+    transition:.3s;
+}
+.menu li:hover  ul {
+    opacity: 1;
+    visibility: visible;
+    transition:.3s;
+    left: 0;
+}
+
+
+.menu li ul {
+    position: absolute;
+    width: 203px;
+    left: -40px;
+    top: 69px;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.menu li ul li a {
+    font-size: 17px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+.menu li ul li {
+    border: none;
+    display: block;
+}
+
+
+
+/*Second Dropdown Menu*/
+
+
+.mainmenu {
+    background: #3b67a6;
+    color: #fff;
+}
+.mainmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mainmenu ul li {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.mainmenu ul li a {
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    padding: 20px 38px;
+    font-size: 22px;
+}
+.mainmenu ul li svg {
+    display: inline-block;
+    margin-right: 15px;
+}
+.mainmenu ul li a svg.fa-w-10 {
+    font-size: 27px;
+    color: #0c0101;
+    font-size: 33px;
+    padding-top: 10px;
+}
+
+
+.mainmenu ul li ul {
+    position: absolute;
+    left: -40px;
+    width: 264px;
+    background: #3b67a6;
+    top: 77px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.mainmenu ul li:hover > a{
+    background-color:#333;
+    transition: .3s;
+}
+.mainmenu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+    left: 0;
+}
+.mainmenu ul li ul li {
+    display: block;
+}
+.mainmenu ul li ul li a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    line-height: 0;
+}
+.mainmenu ul li ul li a svg {
+    display: inline-block;
+}
